@@ -396,3 +396,69 @@ nav a:hover {
     background-color: #ff6600;
     transform: scale(1.1);
 }
+/* Logo Section Styles */
+.logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #333, #555);
+    padding: 50px 20px;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.logo-container {
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.logo-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ff6600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px #ff6600;
+}
+
+.company-name {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #ff6600;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.tagline {
+    font-size: 1.2em;
+    color: #ddd;
+    margin: 5px 0 0;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .logo-section {
+        padding: 30px 10px;
+    }
+
+    .logo-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .company-name {
+        font-size: 1.5em;
+    }
+
+    .tagline {
+        font-size: 1em;
+    }
+}
